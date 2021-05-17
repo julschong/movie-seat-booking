@@ -1,0 +1,46 @@
+.App {
+    border: 3px white solid;
+    width: 400px;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+.picking {
+    margin: 30px auto;
+}
+
+.legend {
+    background: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.legend-opt {
+    align-items: baseline;
+}
+
+.icon {
+    width: 15px;
+    height: 12px;
+    border-radius: 50% 50% 0 0;
+    margin: 0 5px;
+}
+
+.screen {
+    width: 200px;
+    height: 70px;
+    margin: 30px auto;
+    background-color: white;
+    transform: perspective(300px) rotateX(-30deg);
+    box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+}
+
+.row {
+    padding: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
