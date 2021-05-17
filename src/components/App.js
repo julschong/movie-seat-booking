@@ -6,8 +6,8 @@ function App() {
             <section className="picking flex">
                 <p>Pick a move: </p>
                 <select name="move-select" id="move-select">
-                    <option name="move-select" value="hello">
-                        hello
+                    <option name="move-select" value="10">
+                        Avengers: Endgame ($10)
                     </option>
                 </select>
             </section>

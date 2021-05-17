@@ -7,7 +7,16 @@
 }
 
 .picking {
-    margin: 30px auto;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.picking select {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
 }
 
 .legend {
