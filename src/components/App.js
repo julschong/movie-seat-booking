@@ -1,8 +1,16 @@
 import './App.css';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function App() {
+    const dispatch = useDispatch();
+    const value = useSelector((state) => state.value);
+
     return (
         <div className="App">
+            <span>{value}</span>
+            <button onClick={() => dispatch({ type: 'add' })}>inc</button>
+            <button onClick={() => dispatch({ type: 'subtract' })}>dec</button>
             <section className="picking flex">
                 <p>Pick a move: </p>
                 <select name="move-select" id="move-select">
