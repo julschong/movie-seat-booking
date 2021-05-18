@@ -33,15 +33,22 @@
     align-items: baseline;
 }
 
-.icon {
+.seat {
     width: 15px;
     height: 12px;
     border-radius: 50% 50% 0 0;
     margin: 0 5px;
 }
 
-.icon:hover {
+.btn {
+    border: 0;
     cursor: pointer;
+}
+
+.aisle {
+    width: 15px;
+    height: 12px;
+    margin: 0 5px;
 }
 
 .screen {
@@ -57,4 +64,12 @@
     padding: 3px;
     width: 100%;
     margin: 0 auto;
+}
+
+.clr-aqua {
+    color: aqua;
+}
+
+.total {
+    margin-top: 25px;
 }

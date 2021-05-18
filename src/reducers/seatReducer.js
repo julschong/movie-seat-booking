@@ -5,7 +5,7 @@ const seatReducer = (state = 0, action) => {
         case 'off':
             return state - 1;
         default:
-            return { ...state };
+            return state;
     }
 };
 

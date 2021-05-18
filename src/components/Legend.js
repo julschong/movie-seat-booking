@@ -5,15 +5,15 @@ const Legend = () => {
         <>
             <ul className="legend flex">
                 <li className="legend-opt flex">
-                    <div className="icon bg-gray"></div>
+                    <div className="seat bg-gray"></div>
                     N/A
                 </li>
                 <li className="legend-opt flex">
-                    <div className="icon bg-teal"></div>
+                    <div className="seat bg-teal"></div>
                     Selected
                 </li>
                 <li className="legend-opt flex">
-                    <div className="icon bg-white"></div>
+                    <div className="seat bg-white"></div>
                     Occupied
                 </li>
             </ul>
