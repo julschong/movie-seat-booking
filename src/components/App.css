@@ -1,9 +1,10 @@
 .App {
     border: 3px white solid;
     width: 400px;
-    height: 400px;
+    height: auto;
     color: white;
     text-align: center;
+    padding-block: 30px;
 }
 
 .picking {
@@ -37,6 +38,10 @@
     height: 12px;
     border-radius: 50% 50% 0 0;
     margin: 0 5px;
+}
+
+.icon:hover {
+    cursor: pointer;
 }
 
 .screen {

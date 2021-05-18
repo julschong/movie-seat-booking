@@ -6,7 +6,7 @@ import App from './components/App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import seatReducer from './store/seatReducer';
+import seatReducer from './reducers/seatReducer';
 
 const store = createStore(seatReducer, composeWithDevTools());
 

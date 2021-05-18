@@ -1,113 +1,17 @@
 import './App.css';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import MovieSelect from './MovieSelect';
+import Legend from './Legend';
+import Seats from './Seats';
 
 function App() {
-    const dispatch = useDispatch();
-    const value = useSelector((state) => state.value);
+    const [ticketPrice, setTicketPrice] = useState(10);
 
     return (
         <div className="App">
-            <span>{value}</span>
-            <button onClick={() => dispatch({ type: 'add' })}>inc</button>
-            <button onClick={() => dispatch({ type: 'subtract' })}>dec</button>
-            <section className="picking flex">
-                <p>Pick a move: </p>
-                <select name="move-select" id="move-select">
-                    <option name="move-select" value="10">
-                        Avengers: Endgame ($10)
-                    </option>
-                </select>
-            </section>
-            <ul className="legend flex">
-                <li className="legend-opt flex">
-                    <div className="icon bg-gray"></div>
-                    N/A
-                </li>
-                <li className="legend-opt flex">
-                    <div className="icon bg-teal"></div>
-                    Selected
-                </li>
-                <li className="legend-opt flex">
-                    <div className="icon bg-white"></div>
-                    Occupied
-                </li>
-            </ul>
-            <div className="screen"></div>
-            <div className="container">
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-                <div className="row flex">
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon"></div>
-                    <div className="icon bg-gray"></div>
-                    <div className="icon bg-gray"></div>
-                </div>
-            </div>
+            <MovieSelect setTicketPrice={setTicketPrice} />
+            <Legend />
+            <Seats rowCount={6} />
         </div>
     );
 }
